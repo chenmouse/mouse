@@ -23,6 +23,7 @@ colorColumns<- rgbImage[, substr(colnames(rgbImage), 1, 5)== "value"]
 dev.new()
 with(rgbImage,plot(Var2, Var1, col = rgb(colorColumns), asp = 1, pch =".",axes=T,xlab='',ylab=''))
 [图片来源：观察者网](https://www.bilibili.com/video/BV1Dk4y1R7AL)
+![Image](https://github.com/chenmouse/mouse/blob/master/Picture/test.jpg)
 - Bulleted
 - List
 
