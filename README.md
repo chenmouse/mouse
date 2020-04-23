@@ -20,6 +20,7 @@ longImage <- melt(img)
 rgbImage <- reshape(longImage, timevar='Var3',idvar=c('Var1','Var2'), direction='wide')
 head(rgbImage)
 colorColumns<- rgbImage[, substr(colnames(rgbImage), 1, 5)== "value"]
+dev.new()
 with(rgbImage,plot(Var2, Var1, col = rgb(colorColumns), asp = 1, pch =".",axes=T,xlab='',ylab=''))
 
 - Bulleted
