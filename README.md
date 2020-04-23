@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# RStudio图片插入实验
+# RStudio图片插入实验(从RStudio端口编辑)
 library(jpeg)
 library(reshape2)
 img<-readJPEG("test.jpg")
