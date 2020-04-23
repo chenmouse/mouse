@@ -11,9 +11,16 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# RStudio图片插入实验
+library(jpeg)
+library(reshape2)
+img<-readJPEG("test.jpg")
+dim(img)
+longImage <- melt(img)
+rgbImage <- reshape(longImage, timevar='Var3',idvar=c('Var1','Var2'), direction='wide')
+head(rgbImage)
+colorColumns<- rgbImage[, substr(colnames(rgbImage), 1, 5)== "value"]
+with(rgbImage,plot(Var2, Var1, col = rgb(colorColumns), asp = 1, pch =".",axes=T,xlab='',ylab=''))
 
 - Bulleted
 - List
