@@ -39,6 +39,8 @@ with(rgbImage,plot(Var2, Var1, col = rgb(colorColumns), asp = 1, pch =".",axes=T
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+额外注释：上传图片如果不显示可前往[CSDN](https://blog.csdn.net/qq_38232598/article/details/91346392)查找办法
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chenmouse/mouse/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
